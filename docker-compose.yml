@@ -21,14 +21,14 @@ services:
   mysql:
     image: mysql:8.0.43
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: Rafay12345
       MYSQL_DATABASE: University_portal
     ports:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${DB_PASSWORD}"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pRafay12345"]
       interval: 10s
       timeout: 5s
       retries: 5
