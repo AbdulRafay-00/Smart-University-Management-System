@@ -17,7 +17,6 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka-broker:9092
     networks:
       - kafka-network
-
   mysql:
     image: mysql:8.0.43
     environment:
